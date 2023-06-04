@@ -1,0 +1,93 @@
+
+:root {
+    --color-primary: #005cff; /* Azul oscuro */
+    --color-secondary: #ffffff; /* Blanco */
+    --color-accent: #b84cff; /* Azul claro de acento */
+    --color-text: #ffffff; /* Blanco */
+    --color-background: #1f1f1f; /* Negro */
+    --color-hover: rgba(30, 49, 73, 0.2); /* Color de fondo principal */; /* Color de fondo al pasar el cursor */
+    --color-comentarios: rgba(208, 208, 208, 0.895);
+    --color-hover-footer: rgba(255, 255, 255, 0.2);
+}
+
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
+}
+
+h2 {
+    color: inherit;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+a {
+    color: #74caf8;
+    text-decoration: none;
+    transition: color 0.4s ease;
+    width: 4em;
+}
+
+a:hover {
+    color: var(--color-accent);
+}
+
+.comentarios {
+    color: var(--color-comentarios);
+}
+
+header {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
+}
+
+
+.horizontal a {
+    color: var(--color-secondary);
+    background-color: var(--color-primary);
+}
+
+.horizontal a:hover, .horizontal a:active {
+    background-color: #3d99e9;
+    transition: ease 0.4s;
+}
+
+.container {
+    background-color: var(--color-secondary);
+}
+
+.card {
+    background-color: var(--color-secondary);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+footer {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+footer a {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
+footer p {
+    color: rgba(239, 237, 237, 0.895);
+}
+
+footer li, footer h3 {
+    color: var(--color-secondary)
+}
+
+footer ul li a img:hover {
+    background-color: var(--color-hover-footer);
+    transition: 0.5s;
+}
